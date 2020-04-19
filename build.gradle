@@ -15,6 +15,14 @@ buildscript {
     }
 }
 
+plugins {
+    id 'de.gliderpilot.semantic-release' version '1.0.0'
+}
+
+semanticRelease {
+
+}
+
 allprojects {
     repositories {
         google()
