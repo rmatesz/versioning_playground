@@ -16,14 +16,17 @@ buildscript {
 }
 
 plugins {
-    id 'de.gliderpilot.semantic-release' version '1.0.0'
+    id 'de.gliderpilot.semantic-release' version '1.2.0'
 }
 
 semanticRelease {
-
+    repo {
+        ghToken = '36937a7523660fb09c57cda19c0cfb870925cdb9'
+    }
 }
 
 allprojects {
+    apply plugin: 'de.gliderpilot.semantic-release'
     repositories {
         google()
         jcenter()
