@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<TextView>(R.id.version).apply {
             text = "Version: ${BuildConfig.VERSION_NAME}; code: ${BuildConfig.VERSION_CODE}"
+            
         }
     }
 }
