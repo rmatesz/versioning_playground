@@ -3,6 +3,8 @@ package hu.rmatesz.playground.semanticversioning
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import hu.rmatesz.playground.mylibrary.MyPublicAPI
+import hu.rmatesz.playground.mylibrarywithprivatepart.PublicAPI
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,5 +15,8 @@ class MainActivity : AppCompatActivity() {
             text = "Version: ${BuildConfig.VERSION_NAME}; code: ${BuildConfig.VERSION_CODE}"
             
         }
+        MyPublicAPI.publicmethod()
+        MyPublicAPI.internalmethod()
+        PublicAPI.foo()
     }
 }
