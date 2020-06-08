@@ -22,6 +22,7 @@ plugins {
 semanticRelease {
     repo {
         ghToken = '36937a7523660fb09c57cda19c0cfb870925cdb9'
+
     }
 }
 
