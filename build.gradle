@@ -16,7 +16,7 @@ buildscript {
 }
 
 plugins {
-    id 'de.gliderpilot.semantic-release' version '1.2.0'
+    id 'de.gliderpilot.semantic-release' version '1.4.0'
 }
 
 semanticRelease {
